@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/blog.css">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <LINK REL=StyleSheet HREF="rejoj.css" TYPE="text/css" MEDIA=screen>
 
     <!--Header - menu-->
     <header>
@@ -70,15 +70,63 @@
 
     <div class="container-all" id="move-content">
 
+
     
     <div class="blog-container-cover">
+
         <div class="container-info-cover">
             <h1 class="user-select">¡Encuentra tu tema interes!</h1>
             <p class="user-select">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam quis fuga beatae blanditiis assumenda.</p>
+            <div class="reloj" id="reloj"></div>
+            <div class="datos">
+                <span id="fec_Datos"></span>
+                
+            </div>
         </div>
     </div>
 
     <div class="container-post">
+
+
+    
+    
+        <script>
+    
+    let mostrarReloj=()=>{
+        let reloj=document.getElementById('reloj')
+        let fec_Datos=document.getElementById('fec_Datos')
+        let fecha =new Date();
+        let hora=fecha.getHours()
+        let minutos=fecha.getMinutes()
+        let segundos=fecha.getSeconds()
+        let mes=fecha.getMonth()
+        let dia=fecha.getDate()
+        let año=fecha.getFullYear()
+    
+        let dias=['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+        let meses=['enero','febrero','marzo','abril','mayo','junnio','julio','agosto','septiembre','noviembre','diciembre']
+    
+        mes=meses[mes]
+        let hr=(hora>12) ? hora-12 : hora
+        let am=(hora<12)? 'AM' :'PM'
+        if(hora<10){hora='0'+hora}
+        if(minutos<10){minutos='0'+ minutos}
+        if(segundos<10){segundos='0'+minutos}
+    
+        reloj.textContent=`${hr}:${minutos}:${segundos}:${am}`
+        fec_Datos.textContent=`${dia} ${mes} del ${año}`
+       }
+    
+       setInterval(mostrarReloj,1000)
+    
+    
+        </script>
+
+
+
+
+
+
 
         <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
         <input type="radio" id="HTML" name="categories" value="HTML">
@@ -208,7 +256,7 @@
 
         <footer>
             <div class="logo-footer">
-                <img class="user-select" src="img/logo-magtimus-pro-.png" alt="">
+                <img class="user-select" src="" alt="">
             </div>
 
             <div class="redes-footer">
