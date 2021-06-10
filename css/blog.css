@@ -1,6 +1,5 @@
 /*Portada*/
 
-
 .blog-container-cover{
     width: 100%;
     height: 500px;
@@ -12,11 +11,18 @@
     background-repeat: no-repeat;
 }
 
+.user-select {
+   -moz-user-select: none; 
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none; 
+}
+
 .blog-container-cover:before{
     content: '';
     width: 100%;
     height: 100%;
-    background: rgba(25, 81, 235, 0.76);
+    background: rgb(15, 15, 15);
     position: absolute;
     top: 0;
     left: 0;
@@ -147,7 +153,7 @@ input[type="radio"]{
     margin-left: 20px;
     padding: 10px 50px;
     font-size: 16px;
-    background: #46a2fd;
+    background: #2d8dee;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -181,7 +187,7 @@ input[type="radio"]{
 [value="PHP"]:checked ~ .container-category [for="PHP"],
 [value="NODEJS"]:checked ~ .container-category [for="NODEJS"],
 [value="VUE"]:checked ~ .container-category [for="VUE"]{
-    background: #46a2fd;
+    background: #3092f3;
     color: #fff;
 }
 

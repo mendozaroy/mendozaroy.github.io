@@ -9,8 +9,12 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.blog-container-cover{
+    background: #000000;
+}
+
 body{
-    background: #f6f6f6;
+    background: #ffffff;
 }
 
 header{
@@ -19,7 +23,7 @@ header{
     left: 0;
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: rgb(0, 0, 0);
     box-shadow: 0 4px 25px -22px black;
     z-index: 10;
 }
@@ -34,6 +38,7 @@ header{
 
 .logo{
     height: 80px;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +109,7 @@ header{
     top: 16px;
     padding: 10px;
     font-size: 20px;
-    background: #eeeeeefa;
+    background: #222222fa;
     border-radius: 100%;
     color: #787878;
     display: none;
@@ -207,7 +212,7 @@ header{
 #button-up{
     width: 60px;
     height: 60px;
-    background: #46a2fd;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +240,7 @@ header{
 .container-footer{
     width: 100%;
     padding: 40px 0;
-    background: #fff;
+    background: rgb(22, 22, 22);
     margin-top: 40px;
 }
 
@@ -269,7 +274,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    color: #a2a2a2;
+    color: #2c2828;
 }
 
 footer .redes-footer .fa-facebook-f:hover{
@@ -343,7 +348,7 @@ footer .redes-footer .fa-instagram:hover{
         position: fixed;
         top: 80px;
         left: 0;
-        background: #fff;
+        background: rgb(0, 0, 0);
         overflow: hidden;
         transform: translateX(-350px);
         box-shadow: 10px 0 20px -25px black;
