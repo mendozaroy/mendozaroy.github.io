@@ -183,7 +183,7 @@ input[type="radio"]{
 [value="CSS"]:checked ~ .posts .post:not([data-category~="CSS"]),
 [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]),
 [value="PHP"]:checked ~ .posts .post:not([data-category~="PHP"]),
-[value="NODEJS"]:checked ~ .posts .post:not([data-category~="NODEJS"]),
+[value="Deezer Premium"]:checked ~ .posts .post:not([data-category~="Deezer Premium"]),
 [value="VUE"]:checked ~ .posts .post:not([data-category~="VUE"]){
     display: none;
 }
@@ -193,7 +193,7 @@ input[type="radio"]{
 [value="CSS"]:checked ~ .container-category [for="CSS"],
 [value="JS"]:checked ~ .container-category [for="JS"],
 [value="PHP"]:checked ~ .container-category [for="PHP"],
-[value="NODEJS"]:checked ~ .container-category [for="NODEJS"],
+[value="Deezer Premium"]:checked ~ .container-category [for="Deezer Premium"],
 [value="VUE"]:checked ~ .container-category [for="VUE"]{
     background: #3092f3;
     color: #fff;
