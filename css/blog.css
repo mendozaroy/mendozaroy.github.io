@@ -1,41 +1,5 @@
 /*Portada*/
 
-.blog-container-cover{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    margin-top: 80px;
-    background-image: url(../img/img3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-
-
-
-
-
-
-
-.user-select {
-   -moz-user-select: none; 
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none; 
-}
-
-.blog-container-cover:before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgba(26, 138, 243, 0.884);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .container-info-cover{
     max-width: 800px;
     height: 500px;
@@ -68,6 +32,8 @@ input[type="radio"]{
     display: none;
 }
 
+
+/*Post - Publicaciones color de todos o cstegorias*/
 .container-category{
     width: 100%;
     margin: auto;
@@ -76,6 +42,8 @@ input[type="radio"]{
     margin-top: 20px;
 }
 
+
+/*Post - Publicaciones color de todos o cstegorias*/
 .container-category label{
     padding: 6px 40px;
     margin: 10px;
@@ -108,8 +76,10 @@ input[type="radio"]{
     padding: 20px;
 }
 
+
+/*Post - color de las tarejetas*/
 .posts .post{
-    background: #fff;
+    background: rgb(238, 232, 232);
     box-shadow: 0 0 20px -20px black;
     border-radius: 6px;
     overflow: hidden;
@@ -146,6 +116,7 @@ input[type="radio"]{
     margin-top: 10px;
 }
 
+/*Post - Etiquetas pequeñas debajo de los subtitulos*/
 .ctn-tag li{
     list-style: none;
     font-size: 14px;
@@ -156,6 +127,8 @@ input[type="radio"]{
 }
 
 
+
+/*Post - botonos de leer aqui*/
 .post button{
     margin-top: 20px;
     margin-left: 20px;
