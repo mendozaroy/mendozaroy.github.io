@@ -1,0 +1,370 @@
+/*Portada*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.article-container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/img8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 172, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*Contenedor - contenido del articulo*/
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;    
+    background: #fff;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #46a2fd;
+}
+
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+article img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Aside de los articulos de relacionados*/
+
+.container-aside aside{
+  width: 320px;
+  border-right: 6px;
+  box-shadow: 0 0 20px -20px black;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background: #fff;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #e01212;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    
+    
+}
+
+.container-aside aside button:hover{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/****************************/
+
+
+
+
+/*INICIO DE LAS CARD*/
+
+.container__card{
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+/*NO TOCAR - CENTAR LAS TAREJETAS*/
+.card{
+    width: 300px;
+    position: relative;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
+   
+    margin: auto;
+    justify-content: center;
+
+    
+}
+
+.card:hover{
+    box-shadow: 1px 1px 20px -10px #20202049;
+}
+
+.card:hover .info__description{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.card:hover .icon{
+    margin-top: -110px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{
+    width: 100%;
+    height: 220px;
+    background: #EFF3F5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.icon i{
+    font-size: 150px;
+    color: #fff;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+
+
+
+
+/*COLOR DE LETRAS DE LA TAREJETA*/
+
+.info__description{
+    width: 100%;
+    height: 220px;
+    color: #080808;
+    background: #EFF3F5;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.info__description input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: #2196f3;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
+}
+
+.info__description input:hover{
+    box-shadow: 1px 1px 30px -5px #20202070;
+}
+
+
+/*COLOR DE LAS CARD*/
+
+.c1:hover .icon{
+    background: #DD4B25;
+}
+
+.c1 .icon i{
+    color: #DD4B25;
+}
+
+.c1:hover .icon i{
+    color: #fff;
+}
+
+
+.c2:hover .icon{
+    background: #146EB0;
+}
+
+.c2 .icon i{
+    color: #146EB0;
+}
+
+.c2:hover .icon i{
+    color: #fff;
+}
+
+
+.c3:hover .icon{
+    background: #E8B600;
+}
+
+.c3 .icon i{
+    color: #E8B600;
+}
+
+.c3:hover .icon i{
+    color: #fff;
+}
+
+/*FIN DE LAS CARD*/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1220px){
+
+    .container-content{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1020px){
+
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .container-aside{
+        flex-wrap: wrap;
+    }
+
+    #icon-menu{
+        right: 20px;
+    }
+
+}
