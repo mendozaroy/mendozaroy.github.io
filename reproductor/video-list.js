@@ -25,7 +25,7 @@ let allVideos = [
       id: "vid_5"
    },
    {
-      name: "BTS (방탄소년단) "Butter" Official MV",
+      name: "BTS (방탄소년단) Butter Official MV",
       src: "https://mendozaroycode.files.wordpress.com/2021/06/bts28ebb0a9ed8384ec868ceb8584eb8ba829_butter_officialmv28720p_hd29",
       id: "vid_6"
    },
