@@ -1,6 +1,6 @@
 let allVideos = [
    {
-      name: "Computer Monitor Shape",
+      name: "Rihanna - Umbrella (Orange Version)",
       src: "https://mendozaroycode.files.wordpress.com/2021/08/rihanna-umbrella28orangeversion2928officialmusicvideo29ft.jay-z28480p29",
       id: "vid_1"
    },
