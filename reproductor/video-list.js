@@ -5,8 +5,8 @@ let allVideos = [
       id: "vid_1"
    },
    {
-      name: "Button Hover Effect",
-      src: "Button Hover Effect Using Html And CSS",
+      name: "Katy Perry - Chained To The Rhythm",
+      src: "https://mendozaroycode.files.wordpress.com/2021/06/katyperry-chainedtotherhythm28official29ft.skipmarley28720p_hd29",
       id: "vid_2"
    },
    {
