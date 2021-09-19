@@ -10,23 +10,23 @@ let allVideos = [
       id: "vid_2"
    },
    {
-      name: "Confirm Password using Html CSS & js",
-      src: "Confirm Password using Html CSS & js",
+      name: "Camila Cabello - My Oh My",
+      src: "https://mendozaroycode.files.wordpress.com/2021/07/camilacabello-myohmy28liveonthetonightshowstarringjimmyfallon29ft.dababy28720p_hd29",
       id: "vid_3"
    },
    {
-      name: "Creative Card Hover Effect",
-      src: "Creative Card Hover Effect ",
+      name:"Ariana Grande ft. Iggy Azalea - Problem",
+      src: "https://mendozaroycode.files.wordpress.com/2021/07/arianagrandeft.iggyazalea-problem28officialvideo2928720p_hd29",
       id: "vid_4"
    },
    {
-      name: "Creative Digital Clock Ui Design",
-      src: "Creative Digital Clock Ui Design - Html Css & Vanilla Javascript-1",
+      name: "Lady Gaga - Stupid Love",
+      src: "https://mendozaroycode.files.wordpress.com/2021/07/ladygaga-stupidlove28officialmusicvideo2928720p_hd29",
       id: "vid_5"
    },
    {
-      name: "Creative Our Team Section",
-      src: "Creative Our Team Section Using HTML & CSS Neumorphism",
+      name: "BTS (방탄소년단) "Butter" Official MV",
+      src: "https://mendozaroycode.files.wordpress.com/2021/06/bts28ebb0a9ed8384ec868ceb8584eb8ba829_butter_officialmv28720p_hd29",
       id: "vid_6"
    },
    {
