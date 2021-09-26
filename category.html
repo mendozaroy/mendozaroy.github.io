@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Abstract</title>
+    <title>Category - Abstract</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -41,8 +41,6 @@
     </div>
 
 
-    
-
     <!-- header
     ================================================== -->
     <header class="s-header">
@@ -57,12 +55,12 @@
 
             <nav class="s-header__nav-wrap">
 
-                <h2 class="s-header__nav-heading h6">SITIO DE NAVEGACION</h2>
+                <h2 class="s-header__nav-heading h6">Site Navigation</h2>
 
                 <ul class="s-header__nav">
-                    <li class="current"><a href="index.html" title="">Inicio</a></li>
-                    <li class="has-children">
-                        <a href="#0" title="">Categorias</a>
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children current">
+                        <a href="#0" title="">Categories</a>
                         <ul class="sub-menu">
                             <li><a href="category.html">Design</a></li>
                             <li><a href="category.html">Lifestyle</a></li>
@@ -85,7 +83,7 @@
                     </li>
                     <li><a href="styles.html" title="">Styles</a></li>
                     <li><a href="about.html" title="">About</a></li>
-                    <li><a href="contact.html" title="">Contacto</a></li>
+                    <li><a href="contact.html" title="">Contact</a></li>
                 </ul> <!-- end header__nav -->
 
                 <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
@@ -117,88 +115,28 @@
     </header> <!-- end header -->
 
 
+    <!-- page header
+    ================================================== -->
+    <section class="s-pageheader">
+        <div class="row current-cat">
+            <div class="column">
+                <h1 class="h2">Category: Lifestyle</h1>
+            </div>
+        </div>
+    </section>
+
+
     <!-- masonry
     ================================================== -->
-    <section class="s-bricks">
+    <section class="s-bricks with-top-sep">
 
         <div class="masonry">
+
+            <!-- brick-wrapper -->
             <div class="bricks-wrapper h-group">
  
                 <div class="grid-sizer"></div>
 
-                <div class="brick entry featured-grid animate-this">
-                    <div class="entry__content">
-
-                        <div class="featured-post-slider">
-                            
-                            <div class="featured-post-slide">
-                                <div class="f-slide">
-                                    
-                                    <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-1.jpg');"></div>
-                                    <div class="f-slide__overlay"></div>
-
-                                    <div class="f-slide__content">
-                                        <ul class="f-slide__meta">
-                                            <li>September 06, 2020</li> 
-                                            <li><a href="#" >Naruto Uzumaki</a></li>
-                                        </ul>	
-
-                                        <h1 class="f-slide__title"><a href="single-standard.html" title="">Practical Guide to a Minimalist Lifestyle.</a></h1> 
-                                    </div>
-
-                                </div> <!-- f-slide -->
-                            </div> <!-- featured-post-slide -->
-
-                            <div class="featured-post-slide">
-                                <div class="f-slide">
-                                    
-                                    <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-2.jpg');"></div>
-                                    <div class="f-slide__overlay"></div>
-
-                                    <div class="f-slide__content">
-                                        <ul class="f-slide__meta">
-                                            <li>September 06, 2020</li> 
-                                            <li><a href="#" >Sakura Haruno</a></li>
-                                        </ul>
-
-                                        <h1 class="f-slide__title"><a href="single-standard.html" title="">Enhancing Your Designs with Negative Space</a></h1> 
-                                    </div>
-
-                                </div> <!-- f-slide -->
-                            </div> <!-- featured-post-slide -->
-
-                            <div class="featured-post-slide">
-                                <div class="f-slide">
-                                    
-                                    <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-3.jpg');"></div>
-                                    <div class="f-slide__overlay"></div>
-
-                                    <div class="f-slide__content">
-                                        <ul class="f-slide__meta">
-                                            <li>September 05, 2020</li> 
-                                            <li><a href="#" >Shikamaru Nara</a></li>
-                                        </ul>
-
-                                        <h1 class="f-slide__title"><a href="single-standard.html" title="">Music Album Cover Designs for Inspiration</a></h1> 
-                                    </div>
-
-                                </div> <!-- f-slide -->
-                            </div> <!-- featured-post-slide -->
-
-                        </div> <!-- end feature post slider -->
-                        
-                        <div class="featured-post-nav">
-                            <button class="featured-post-nav__prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
-                            </button>
-                            <button class="featured-post-nav__next">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
-                            </button>
-                        </div> <!-- featured-post-nav -->
-
-                    </div> <!-- end entry content -->
-                </div> <!-- end entry, featured grid -->
- 
                 <article class="brick entry format-standard animate-this">
     
                     <div class="entry__thumb">
@@ -453,7 +391,7 @@
                     <div class="entry__thumb video-image">
                         <a href="https://player.vimeo.com/video/117310401?color=ffffff&title=0&byline=0&portrait=0" data-lity  class="thumb-link">
                             <img src="images/thumbs/masonry/cookies-600.jpg" 
-                                 srcset="images/thumbs/masonry/cookies-600.jpg 1x, images/thumbs/masonry/cookies-1200.jpg 2x" alt="">
+                                 srcset="images/thumbs/masonry/cookies-600.jpg 1x, images/thumbs/masonry/cookies-1200.jpg 2x" alt="">                  
                         </a>
                     </div> <!-- end entry__thumb -->
  
@@ -509,7 +447,7 @@
                 
                 </article> <!-- end article -->
  
-                <article class="brick entry format standard animate-this">
+                <article class="brick entry format-standard animate-this">
  
                     <div class="entry__thumb">
                         <a href="single-standard.html" class="thumb-link">
@@ -630,7 +568,7 @@
                         </div>
                     </div> <!-- end entry__text -->
                 
-                 </article> <!-- end article -->
+                </article> <!-- end article -->
  
             </div> <!-- end brick-wrapper --> 
  
@@ -758,7 +696,7 @@
 
 
    <!-- Java Script
-   ================================================== -->
+   ================================================== --> 
    <script src="js/jquery-3.2.1.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
