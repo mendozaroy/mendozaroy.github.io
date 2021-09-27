@@ -26,168 +26,150 @@
     <!-- * loader -->
 
     <!-- App Header -->
-    <div class="appHeader bg-primary scrolled">
+    <div class="appHeader bg-primary text-light">
         <div class="left">
-            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
-                <ion-icon name="menu-outline"></ion-icon>
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
             </a>
         </div>
-        <div class="pageTitle">
-            Discover
-        </div>
-        <div class="right">
-            <a href="javascript:;" class="headerButton toggle-searchbox">
-                <ion-icon name="search-outline"></ion-icon>
+        <div class="pageTitle">Dropdowns</div>
+        <div class="right dropdown">
+            <a href="#" class="headerButton" data-toggle="dropdown">
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
             </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Edit</a>
+                <a class="dropdown-item" href="#">Delete</a>
+                <a class="dropdown-item" href="#">Share</a>
+            </div>
         </div>
     </div>
     <!-- * App Header -->
 
-    <!-- Search Component -->
-    <div id="search" class="appHeader">
-        <form class="search-form">
-            <div class="form-group searchbox">
-                <input type="text" class="form-control" placeholder="Search...">
-                <i class="input-icon">
-                    <ion-icon name="search-outline"></ion-icon>
-                </i>
-                <a href="javascript:;" class="ml-1 close toggle-searchbox">
-                    <ion-icon name="close-circle"></ion-icon>
-                </a>
-            </div>
-        </form>
-    </div>
-    <!-- * Search Component -->
-
     <!-- App Capsule -->
     <div id="appCapsule">
 
-        <div class="header-large-title">
-            <h1 class="title">Discover</h1>
-            <h4 class="subtitle">Welcome to Mobilekit</h4>
-        </div>
 
-        <div class="section full mt-3 mb-3">
-            <div class="carousel-multiple owl-carousel owl-theme">
-
-                <div class="item">
-                    <div class="card">
-                        <img src="assets/img/sample/photo/d1.jpg" class="card-img-top" alt="image">
-                        <div class="card-body pt-2">
-                            <h4 class="mb-0">Progressive web app ready</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="assets/img/sample/photo/d2.jpg" class="card-img-top" alt="image">
-                        <div class="card-body pt-2">
-                            <h4 class="mb-0">Reusable components</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="assets/img/sample/photo/d3.jpg" class="card-img-top" alt="image">
-                        <div class="card-body pt-2">
-                            <h4 class="mb-0">Great for phones & tablets</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="assets/img/sample/photo/d4.jpg" class="card-img-top" alt="image">
-                        <div class="card-body pt-2">
-                            <h4 class="mb-0">Change the styles in one file</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="assets/img/sample/photo/d6.jpg" class="card-img-top" alt="image">
-                        <div class="card-body pt-2">
-                            <h4 class="mb-0">Sketch source file included</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="assets/img/sample/photo/d5.jpg" class="card-img-top" alt="image">
-                        <div class="card-body pt-2">
-                            <h4 class="mb-0">Written with a code structure</h4>
-                        </div>
+        <div class="section full mt-1">
+            <div class="section-title">Basic Example</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Basic dropdown example</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Example
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#">Save</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Delete</a>
                     </div>
                 </div>
 
             </div>
-
         </div>
 
-
-        <div class="section mt-3 mb-3">
-            <div class="card">
-                <div class="card-body d-flex justify-content-between align-items-end">
-                    <div>
-                        <h6 class="card-subtitle">Discover</h6>
-                        <h5 class="card-title mb-0 d-flex align-items-center justify-content-between">
-                            Dark Mode
-                        </h5>
+        <div class="section full mt-2">
+            <div class="section-title">Right Aligment</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>
+                    Align to right with <code>.dropdown-menu-right</code>
+                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Aligned to Right
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#">Save</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Delete</a>
                     </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input dark-mode-switch" id="darkmodeswitch">
-                        <label class="custom-control-label" for="darkmodeswitch"></label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">With Icons</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>
+                    Use icons with dropdown
+                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Example
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            Facebook
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            Twitter
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            Email
+                        </a>
                     </div>
-
                 </div>
+
             </div>
         </div>
 
-        <div class="section mt-3 mb-3">
-            <div class="card">
-                <video class="card-img-top" alt="image" src="https://mendozaroycode.files.wordpress.com/2021/08/fifthharmony-worthit28officialvideo29ft.kidink28480p29.mp4" controls></video> 
-                <div class="card-body">
-                    <h6 class="card-subtitle">Discover</h6>
-                    <h5 class="card-title">Components</h5>
-                    <p class="card-text">
-                        Reusable components designed for the mobile interface and ready to use.
-                    </p>
-                    <a href="app-components.html" class="btn btn-primary">
-                        <ion-icon name="cube-outline"></ion-icon>
-                        Preview
-                    </a>
+        <div class="section full mt-2">
+            <div class="section-title">Headers</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Add header with <code>.dropdown-header</code></p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Example
+                    </button>
+                    <div class="dropdown-menu">
+                        <h6 class="dropdown-header">Dropdown header</h6>
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#">Save</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
                 </div>
+
             </div>
         </div>
 
-        <div class="section mt-3 mb-3">
-            <div class="card">
-                <img src="assets/img/sample/photo/wide2.jpg" class="card-img-top" alt="image">
-                <div class="card-body">
-                    <h6 class="card-subtitle">Discover</h6>
-                    <h5 class="card-title">Pages</h5>
-                    <p class="card-text">
-                        Mobilekit comes with basic pages you may need and use in your projects easily.
-                    </p>
-                    <a href="app-pages.html" class="btn btn-primary">
-                        <ion-icon name="layers-outline"></ion-icon>
-                        Preview
-                    </a>
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">Texts</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Add text with <code>.text</code></p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Example
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="text">
+                            Some example text that's free-flowing within the dropdown menu.
+                        </div>
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#">Save</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
                 </div>
+
             </div>
         </div>
 
 
-        <!-- app footer -->
-       
-        <!-- * app footer -->
 
     </div>
     <!-- * App Capsule -->
 
-
     <!-- App Bottom Menu -->
     <div class="appBottomMenu">
-        <a href="index.html" class="item active">
+        <a href="index.html" class="item">
             <div class="col">
                 <ion-icon name="home-outline"></ion-icon>
             </div>
@@ -369,31 +351,6 @@
     </div>
     <!-- * App Sidebar -->
 
-    <!-- welcome notification  -->
-    <div id="notification-welcome" class="notification-box">
-        <div class="notification-dialog android-style">
-            <div class="notification-header">
-                <div class="in">
-                    <img src="assets/img/icon/72x72.png" alt="image" class="imaged w24">
-                    <strong>Mobilekit</strong>
-                    <span>just now</span>
-                </div>
-                <a href="#" class="close-button">
-                    <ion-icon name="close"></ion-icon>
-                </a>
-            </div>
-            <div class="notification-content">
-                <div class="in">
-                    <h3 class="subtitle">Welcome to Mobilekit</h3>
-                    <div class="text">
-                        Mobilekit is a PWA ready Mobile UI Kit Template.
-                        Great way to start your mobile websites and pwa projects.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- * welcome notification -->
 
     <!-- ///////////// Js Files ////////////////////  -->
     <!-- Jquery -->
@@ -410,12 +367,6 @@
     <!-- Base Js File -->
     <script src="assets/js/base.js"></script>
 
-
-    <script>
-        setTimeout(() => {
-            notification('notification-welcome', 5000);
-        }, 2000);
-    </script>
 
 </body>
 
