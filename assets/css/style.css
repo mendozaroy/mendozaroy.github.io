@@ -186,9 +186,9 @@ button:hover, button:active, button:focus {
 .header-large-title .subtitle {
   font-size: 17px;
   font-weight: 400;
-  margin: 6px 0 0 0;
+  margin: 7px 0 0 0;
   color: #141515;
-  line-height: 1.6em;
+  line-height: 6px;
 }
 
 .appHeader.scrolled {
