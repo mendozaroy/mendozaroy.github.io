@@ -23,7 +23,13 @@ body {
 
 
 
-
+.tituloartista {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 7px 0 0 0;
+  color: #141515;
+  line-height: 6px;
+}
 
 
 .barrperfil {
@@ -283,7 +289,7 @@ button:hover, button:active, button:focus {
 .header-large-title .subtitle {
   font-size: 17px;
   font-weight: 400;
-  margin: 7px 0 0 0;
+  margin: 19px 0 0 0;
   color: #141515;
   line-height: 6px;
 }
@@ -2053,7 +2059,7 @@ a.badge-dark {
 }
 
 .card .card-body {
-  padding: 24px 16px;
+  padding: 15px 16px;
   line-height: 1.4em;
 }
 
@@ -5119,7 +5125,7 @@ textarea,
 
 .owl-carousel .owl-stage-outer {
   padding-bottom: 20px;
-  margin-bottom: -20px;
+  margin-bottom: -50px;
 }
 
 .login-form {
@@ -6840,7 +6846,7 @@ textarea,
 
 body.dark-mode-active {
   background: #212121 !important;
-  color: #8195a6;
+  color: #e7ebee;
 }
 
 body.dark-mode-active.bg-light, body.dark-mode-active.bg-white {
